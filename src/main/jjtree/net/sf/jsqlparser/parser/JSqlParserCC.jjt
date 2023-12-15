@@ -6539,7 +6539,7 @@ Alter AlterTable():
 
     alterExp=AlterExpression() { if (usingIfExists)
                                     alter.addAlterExpression( alterExp.withUsingIfExists(true) );
-                                  else
+                                 else
                                     alter.addAlterExpression(alterExp); }
 
     ("," alterExp=AlterExpression() { alter.addAlterExpression(alterExp); } )*
